@@ -56,7 +56,7 @@ class UiInit extends BaseCommand
      */
     public function run(array $params)
     {
-        $src = ROOTPATH . 'vendor/forge/uiunit/public';
+        $src = ROOTPATH . 'vendor/uiforge/uiunit/public';
         $dst = ROOTPATH . 'public/';
 
         if (! is_dir($src)) {
