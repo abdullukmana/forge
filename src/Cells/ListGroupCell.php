@@ -4,7 +4,7 @@ namespace Forge\Uiunit\Cells;
 
 use CodeIgniter\View\Cells\Cell;
 
-class NavigationCell extends Cell
+class ListGroupCell extends Cell
 {
     public array $items = [];
     public array $colors = [];
