@@ -1,5 +1,5 @@
 {
-    "name": "forge/uiunit",
+    "name": "uiforge/uiunit",
     "description": "Unit-unit UI yang reusable",
     "type": "library",
     "license": "MIT",
