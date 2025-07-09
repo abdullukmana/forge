@@ -1,0 +1,22 @@
+{
+    "name": "forge/uiunit",
+    "description": "Unit-unit UI yang reusable",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Forge\\Uiunit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abdul Lukmana",
+            "email": "abdullukmana17@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "codeigniter4/framework": "^4.4"
+    }
+}
