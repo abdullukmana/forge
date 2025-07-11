@@ -35,7 +35,7 @@ php spark uiunit:init
 Untuk mendukung penyimpanan state accordion (buka/tutup), Anda perlu menambahkan routing berikut di app/Config/Routes.php:
 ```php
 // Tambahkan di atas definisi route accordion
-$routes->addPlaceholder('accordionTitle', '[a-zA-Z0-9\-_]+');
+$routes->addPlaceholder('accordionTitle', '[a-zA-Z0-9\-_ ]+');
 
 // Route GET untuk mendapatkan semua state dari cookie
 $routes->get(
