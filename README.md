@@ -31,6 +31,27 @@ composer require uiforge/uiunit
 php spark uiunit:init
 ```
 
+## 🔗 Integrasi Routing Tambahan
+Untuk mendukung penyimpanan state accordion (buka/tutup), Anda perlu menambahkan routing berikut di app/Config/Routes.php:
+```php
+// Tambahkan di atas definisi route accordion
+$routes->addPlaceholder('accordionTitle', '[a-zA-Z0-9\-_]+');
+
+// Route GET untuk mendapatkan semua state dari cookie
+$routes->get(
+    'accordion-state',
+    'AccordionState::get',
+    ['namespace' => 'Forge\Uiunit\Controllers']
+);
+
+// Route POST untuk menyimpan perubahan state berdasarkan title
+$routes->post(
+    'accordion-state/save/(:accordionTitle)',
+    'AccordionState::save/$1',
+    ['namespace' => 'Forge\Uiunit\Controllers']
+);
+```
+
 ---
 
 ## 🗂️ Struktur Library
